@@ -69,17 +69,17 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
 3. **📝 Set Up Environment Variables**  
    Create a `.env` file in the root directory with the following variables:
-
+   
     ```env
-     VITE_FIREBASE_API =
-     VITE_FIREBASE_AUTHDOMAIN =
-     VITE_PROJECT_ID =
-     VITE_STORAGE_BUCKET =
-     VITE_MESS_SEND_ID =
-     VITE_APP_ID =
-     VITE_RAZORPAY_KEY_ID =
-     VITE_RAZORPAY_KEY_SECRET =
-     VITE_BASE_URL =
+        VITE_FIREBASE_API=<your-firebase-api-key>
+        VITE_FIREBASE_AUTHDOMAIN=<your-firebase-auth-domain>
+        VITE_PROJECT_ID=<your-firebase-project-id>
+        VITE_STORAGE_BUCKET=<your-firebase-storage-bucket>
+        VITE_MESS_SEND_ID=<your-firebase-messaging-sender-id>
+        VITE_APP_ID=<your-firebase-app-id>
+        VITE_RAZORPAY_KEY_ID=<your-razorpay-key-id>
+        VITE_RAZORPAY_KEY_SECRET=<your-razorpay-key-secret>
+        VITE_BASE_URL=<your-proxy-middleware-base-url>
     ```
 
 4. **CORS Middleware**:  
@@ -93,17 +93,6 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
 6. **🌐 Access the Application**  
    Open [http://localhost:5173](http://localhost:5173) in your browser.
-
----
-
-## **🗂️ Project Structure**
-
--   📁 **src/components**: Reusable React components.
--   🔧 **src/utils**: Redux slices and store configuration.
--   📁 **src/pages**: Page-level components such as Home, Cart, and Checkout.
--   🎨 **src/css**: Tailwind CSS setup and custom styles.
--   📁 **src/hooks**: Reusable logics for each pages.
--   🔧 **src/config**: Configuration files for the app.
 
 ---
 
@@ -140,9 +129,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## **📞 Contact**
 
-For queries or suggestions, feel free to reach out:
+For queries, feedback, or suggestions, feel free to reach out:
 
--   📧 **Email**: sharadindudas774@gmail.com
+-   📧 **Email**: [sharadindudas774@gmail.com](mailto:sharadindudas774@gmail.com)
 -   🐙 **GitHub**: [Your GitHub Profile](https://github.com/sharadindudas)
 
 ---
