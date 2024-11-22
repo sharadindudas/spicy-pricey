@@ -1,69 +1,150 @@
-# Spicy Pricey
+# **🌶️ Spicy Pricey 🌟**
 
-Welcome to Spicy Pricey, your go-to solution for convenient and delicious food delivery! This web application is built with React for the frontend, Redux Toolkit for state management, and Firebase for authentication. Whether you're craving pizza, sushi, or something sweet, Spicy Pricey has you covered.
+A Swiggy-inspired web application designed to provide a seamless and engaging food ordering experience.
 
-## Hosted Link
+---
 
-Check out the hosted version of Spicy Pricey at [https://spicy-pricey-food-delivery.vercel.app](https://spicy-pricey-food-delivery.vercel.app).
+## **✨ Features**
 
-## Swiggy Backend Api Cors Bypass
-I had to bypass the cors issue to use the swiggy api without any issues by just creating a proxy middleware [https://github.com/R3MODAS/Food-Delivery-Cors](https://github.com/R3MODAS/Food-Delivery-Cors)
+-   🔐 **Authentication**: Secure Google Login using Firebase Authentication.
+-   🥗 **Real-Time API Integration**: Access Swiggy’s live data to explore restaurants, menus, and dishes.
+-   🛒 **Cart Functionality**: Add, update, or delete food items in a dynamic cart.
+-   ✅ **Checkout System**: A user-friendly checkout page for order management.
+-   💳 **Payment Integration**: Razorpay integration (frontend) for smooth payment processing.
+-   🛠️ **Proxy Middleware**: Custom middleware to bypass CORS issues with Swiggy’s API.
 
-## Features
+---
 
-- **User Authentication**: Securely log in with Firebase authentication.
+## **🛠️ Tech Stack**
 
-- **Browse Restaurants**: Explore a variety of restaurants and cuisines to find the perfect meal for any occasion.
+-   **Frontend**:
 
-- **Menu Exploration**: Dive into detailed menus with mouth-watering images and descriptions.
+    -   ⚛️ **React.js**: Responsive and interactive user interface.
+    -   📦 **Redux**: State management for efficient data flow.
+    -   🎨 **ShadCN UI**: Sleek and modern UI components for accessibility and consistency.
+    -   🌈 **Tailwind CSS**: Highly customizable styling with a modern design approach.
 
-- **Cart Management**: Easily add and remove items from your cart, and see a summary of your order before checkout.
+-   **Middleware for CORS**:
 
-## Tech Stack
+    -   🌐 **CORS Bypass**: Implemented via a custom proxy middleware.
+    -   Repository: [Spicy Pricey CORS Middleware](https://github.com/sharadindudas/spicy-pricey-cors).
 
-- **React**: A JavaScript library for building user interfaces.
+-   **Authentication**:
 
-- **Redux Toolkit**: State management library for predictable state container in JavaScript apps.
+    -   🔑 **Firebase Authentication**: Secure Google login for user authentication.
 
-- **Firebase**: A comprehensive platform for building web and mobile applications with authentication, database, and hosting services.
+-   **Payment**:
+    -   💸 **Razorpay Integration (Frontend)**: Simplifies payment handling on the user side.
 
-## Getting Started
+---
 
-### Prerequisites
+## **🚀 Hosted Link**
 
-Make sure you have Node.js and npm installed on your machine.
+👉 Access the live version of **Spicy Pricey** here: [🌶️ Spicy Pricey](https://spicy-pricey.sharadindudas.com)
 
-### Installation
+---
 
-1. Clone the repository:
+## **📋 How to Run the Project**
 
-```bash
-git clone https://github.com/R3MODAS/spicy-pricey.git
-cd spicy-pricey
-```
+### **🔧 Prerequisites**
 
-2. Install dependencies:
+-   🖥️ Node.js and npm installed.
+-   🔥 Firebase project set up with Google Authentication enabled.
+-   💳 Razorpay account for payment integration.
 
-```bash
-npm install
-```
+### **⚙️ Steps to Install and Run Locally**
 
-3. Run the app:
+1. **📂 Clone the Repository**
 
-```bash
-npm run dev
-```
+    ```bash
+    git clone https://github.com/sharadindudas/spicy-pricey.git
+    cd spicy-pricey
+    ```
 
-Visit `http://localhost:5173` in your browser to see Spicy Pricey in action.
+2. **📦 Install Dependencies**
 
-## Contributing
+    ```bash
+    npm install
+    ```
 
-We welcome contributions! If you'd like to contribute to Spicy Pricey, please follow our [contribution guidelines](CONTRIBUTING.md).
+3. **📝 Set Up Environment Variables**  
+   Create a `.env` file in the root directory with the following variables:
 
-## License
+    ```env
+     VITE_FIREBASE_API =
+     VITE_FIREBASE_AUTHDOMAIN =
+     VITE_PROJECT_ID =
+     VITE_STORAGE_BUCKET =
+     VITE_MESS_SEND_ID =
+     VITE_APP_ID =
+     VITE_RAZORPAY_KEY_ID =
+     VITE_RAZORPAY_KEY_SECRET =
+     VITE_BASE_URL =
+    ```
+
+4. **CORS Middleware**:  
+   Clone the CORS middleware repository and follow the instructions provided in the [Spicy Pricey CORS Middleware](https://github.com/sharadindudas/spicy-pricey-cors) repository.
+
+5. **▶️ Start the Development Server**
+
+    ```bash
+    npm start
+    ```
+
+6. **🌐 Access the Application**  
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## **🗂️ Project Structure**
+
+-   📁 **src/components**: Reusable React components.
+-   🔧 **src/utils**: Redux slices and store configuration.
+-   📁 **src/pages**: Page-level components such as Home, Cart, and Checkout.
+-   🎨 **src/css**: Tailwind CSS setup and custom styles.
+-   📁 **src/hooks**: Reusable logics for each pages.
+-   🔧 **src/config**: Configuration files for the app.
+
+---
+
+## **🌟 Future Enhancements**
+
+-   🗃️ Backend integration for storing orders and user history.
+-   🔍 Enhanced search and filtering options for restaurants and dishes.
+-   📡 Real-time order tracking.
+
+---
+
+## **🤝 Contributing**
+
+Contributions are welcome! To contribute:
+
+1. 🍴 Fork the repository.
+2. 🔀 Create a feature branch:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. 💾 Commit your changes:
+    ```bash
+    git commit -m "Add feature-name"
+    ```
+4. 📤 Push the branch and create a pull request.
+
+---
+
+## **📜 License**
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for using Foodie Express! If you have any questions or issues, feel free to open an [issue](https://github.com/R3MODAS/spicy-pricey/issues). Enjoy your delicious meals! 🍔🍕🍜
+## **📞 Contact**
+
+For queries or suggestions, feel free to reach out:
+
+-   📧 **Email**: sharadindudas774@gmail.com
+-   🐙 **GitHub**: [Your GitHub Profile](https://github.com/sharadindudas)
+
+---
+
+Elevate your food ordering experience with **🌶️ Spicy Pricey**! 🍽️
