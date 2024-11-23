@@ -132,7 +132,7 @@ This project is licensed under the [MIT License](LICENSE).
 For queries, feedback, or suggestions, feel free to reach out:
 
 -   📧 **Email**: [sharadindudas774@gmail.com](mailto:sharadindudas774@gmail.com)
--   🐙 **GitHub**: [Your GitHub Profile](https://github.com/sharadindudas)
+-   🐙 **GitHub**: [Sharadindu Das](https://github.com/sharadindudas)
 
 ---
 
