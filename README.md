@@ -1,4 +1,4 @@
-# **🌶️ Spicy Pricey 🌟**
+# **🌶️ Fork & Fusion 🌟**
 
 A Swiggy-inspired web application designed to provide a seamless and engaging food ordering experience.
 
@@ -27,7 +27,7 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 -   **Middleware for CORS**:
 
     -   🌐 **CORS Bypass**: Implemented via a custom proxy middleware.
-    -   Repository: [Spicy Pricey CORS Middleware](https://github.com/sharadindudas/spicy-pricey-cors).
+    -   Repository: [Fork & Fusion CORS Middleware](https://github.com/sharadindudas/food-delivery-cors).
 
 -   **Authentication**:
 
@@ -40,7 +40,7 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
 ## **🚀 Hosted Link**
 
-👉 Access the live version of **Spicy Pricey** here: [🌶️ Spicy Pricey](https://spicy-pricey.sharadindudas.com)
+👉 Access the live version of **Spicy Pricey** here: [🌶️ Fork & Fusion](https://spicy-pricey.sharadindudas.com)
 
 ---
 
@@ -57,8 +57,8 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 1. **📂 Clone the Repository**
 
     ```bash
-    git clone https://github.com/sharadindudas/spicy-pricey.git
-    cd spicy-pricey
+    git clone https://github.com/sharadindudas/fork-and-fusion.git
+    cd fork-and-fusion
     ```
 
 2. **📦 Install Dependencies**
@@ -83,12 +83,12 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
     ```
 
 4. **CORS Middleware**:  
-   Clone the CORS middleware repository and follow the instructions provided in the [Spicy Pricey CORS Middleware](https://github.com/sharadindudas/spicy-pricey-cors) repository.
+   Clone the CORS middleware repository and follow the instructions provided in the [Fork & Fusion CORS Middleware](https://github.com/sharadindudas/food-delivery-cors) repository.
 
 5. **▶️ Start the Development Server**
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 6. **🌐 Access the Application**  
@@ -136,4 +136,4 @@ For queries, feedback, or suggestions, feel free to reach out:
 
 ---
 
-Elevate your food ordering experience with **🌶️ Spicy Pricey**! 🍽️
+Elevate your food ordering experience with **🌶️ Fork & Fusion**! 🍽️
