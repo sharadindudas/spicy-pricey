@@ -58,7 +58,7 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
     ```bash
     git clone https://github.com/sharadindudas/spicy-pricey.git
-    cd spicy pricey
+    cd spicy-pricey
     ```
 
 2. **📦 Install Dependencies**
