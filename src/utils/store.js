@@ -9,8 +9,8 @@ const store = configureStore({
         toggle: toggleReducer,
         location: locationReducer,
         cart: cartReducer,
-        user: userReducer,
-    },
+        user: userReducer
+    }
 });
 
 export default store;

@@ -17,10 +17,10 @@ const RestaurantMenu = () => {
         id: ResInfo?.card?.card?.info?.id,
         img: RES_CART_IMG + ResInfo?.card?.card?.info?.cloudinaryImageId,
         place: ResInfo?.card?.card?.info?.areaName,
-        deliveryfee: ResInfo?.card?.card?.info?.feeDetails?.totalFee / 100,
+        deliveryfee: ResInfo?.card?.card?.info?.feeDetails?.totalFee / 100
     };
 
-    const handleShowItem = CurrentIndex => {
+    const handleShowItem = (CurrentIndex) => {
         if (CurrentIndex === ShowIndex) {
             setShowIndex(null);
         } else {
@@ -40,34 +40,24 @@ const RestaurantMenu = () => {
 
                 {ResInfo?.card?.card?.info?.isOpen ? (
                     <ul className="main-menu-container">
-                        {ResMenu?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map(
-                            (category, index) => {
-                                return category?.card?.card?.itemCards ? (
-                                    <li
-                                        key={category?.card?.card?.title}
-                                        className="cursor-pointer"
-                                    >
-                                        <RestaurantCategory
-                                            {...category?.card?.card}
-                                            ShowItem={
-                                                index === ShowIndex
-                                                    ? true
-                                                    : false
-                                            }
-                                            handleShowItem={() =>
-                                                handleShowItem(index)
-                                            }
-                                            ResInfoData={ResInfoData}
-                                        />
-                                    </li>
-                                ) : null;
-                            },
-                        )}
+                        {ResMenu?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map((category, index) => {
+                            return category?.card?.card?.itemCards ? (
+                                <li
+                                    key={category?.card?.card?.title}
+                                    className="cursor-pointer">
+                                    <RestaurantCategory
+                                        {...category?.card?.card}
+                                        ShowItem={index === ShowIndex ? true : false}
+                                        handleShowItem={() => handleShowItem(index)}
+                                        ResInfoData={ResInfoData}
+                                    />
+                                </li>
+                            ) : null;
+                        })}
                     </ul>
                 ) : (
                     <h2 className="resMsg font-ProximaNovaMed text-sm">
-                        Uh-oh! The outlet is not accepting orders at the moment.
-                        We&apos;re working to get them back online
+                        Uh-oh! The outlet is not accepting orders at the moment. We&apos;re working to get them back online
                     </h2>
                 )}
             </>

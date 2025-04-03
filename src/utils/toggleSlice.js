@@ -4,18 +4,17 @@ const toggleSlice = createSlice({
     name: "toggle",
     initialState: {
         isLocationSidebarOpen: false,
-        isLoginSidebarOpen: false,
+        isLoginSidebarOpen: false
     },
     reducers: {
-        toggleLocationSidebar: state => {
+        toggleLocationSidebar: (state) => {
             state.isLocationSidebarOpen = !state.isLocationSidebarOpen;
         },
-        toggleLoginSidebar: state => {
+        toggleLoginSidebar: (state) => {
             state.isLoginSidebarOpen = !state.isLoginSidebarOpen;
-        },
-    },
+        }
+    }
 });
 
-export const { toggleLocationSidebar, toggleLoginSidebar } =
-    toggleSlice.actions;
+export const { toggleLocationSidebar, toggleLoginSidebar } = toggleSlice.actions;
 export default toggleSlice.reducer;

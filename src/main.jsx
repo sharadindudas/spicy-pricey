@@ -21,11 +21,11 @@ const appRouter = createBrowserRouter([
                     <Suspense fallback={<ShimmerHome />}>
                         <Home />
                     </Suspense>
-                ),
+                )
             },
             {
                 path: "/checkout",
-                element: <Checkout />,
+                element: <Checkout />
             },
             {
                 path: "/restaurants/:resId",
@@ -33,15 +33,15 @@ const appRouter = createBrowserRouter([
                     <Suspense fallback={<ShimmerMenu />}>
                         <RestaurantMenu />
                     </Suspense>
-                ),
-            },
+                )
+            }
         ],
-        errorElement: <Error />,
-    },
+        errorElement: <Error />
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
         <RouterProvider router={appRouter} />
-    </Provider>,
+    </Provider>
 );

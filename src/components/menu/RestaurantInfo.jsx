@@ -1,26 +1,18 @@
 import { Link } from "react-router-dom";
 
 const RestaurantInfo = ({ ResInfo }) => {
-    const {
-        city,
-        name,
-        cuisines,
-        areaName,
-        sla,
-        avgRating,
-        totalRatingsString,
-        feeDetails,
-    } = ResInfo?.card?.card?.info;
+    const { city, name, cuisines, areaName, sla, avgRating, totalRatingsString, feeDetails } = ResInfo?.card?.card?.info;
 
     return (
         <>
-            <div className="flex" aria-label="Breadcrumb">
+            <div
+                className="flex"
+                aria-label="Breadcrumb">
                 <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-color-5">
                     <li className="inline-flex items-center">
                         <Link
                             to="/"
-                            className="inline-flex items-center text-xs font-medium"
-                        >
+                            className="inline-flex items-center text-xs font-medium">
                             Home
                         </Link>
                     </li>
@@ -31,8 +23,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
-                                viewBox="0 0 6 10"
-                            >
+                                viewBox="0 0 6 10">
                                 <path
                                     stroke="currentColor"
                                     strokeLinecap="round"
@@ -41,9 +32,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                                     d="m1 9 4-4-4-4"
                                 />
                             </svg>
-                            <span className="ms-1 text-xs font-medium">
-                                {city}
-                            </span>
+                            <span className="ms-1 text-xs font-medium">{city}</span>
                         </div>
                     </li>
                     <li aria-current="page">
@@ -53,8 +42,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
-                                viewBox="0 0 6 10"
-                            >
+                                viewBox="0 0 6 10">
                                 <path
                                     stroke="currentColor"
                                     strokeLinecap="round"
@@ -63,9 +51,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                                     d="m1 9 4-4-4-4"
                                 />
                             </svg>
-                            <span className="ms-1 text-xs font-medium text-[#535665]">
-                                {name}
-                            </span>
+                            <span className="ms-1 text-xs font-medium text-[#535665]">{name}</span>
                         </div>
                     </li>
                 </ol>
@@ -76,12 +62,8 @@ const RestaurantInfo = ({ ResInfo }) => {
 
                 <div className="mt-14 flex justify-between">
                     <div>
-                        <h2 className="font-ProximaNovaSemiBold text-xl">
-                            {name}
-                        </h2>
-                        <p className="text-color-8 text-xs font-ProximaNovaThin mb-1 mt-1">
-                            {cuisines?.join(", ")}
-                        </p>
+                        <h2 className="font-ProximaNovaSemiBold text-xl">{name}</h2>
+                        <p className="text-color-8 text-xs font-ProximaNovaThin mb-1 mt-1">{cuisines?.join(", ")}</p>
                         <p className="text-color-8 text-xs font-ProximaNovaThin">
                             {areaName}, {sla?.lastMileTravelString}
                         </p>
@@ -98,9 +80,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                                     </span>
                                     <span className="text-sm">{avgRating}</span>
                                 </div>
-                                <div className="text-xs text-[#8b8d97] font-ProximaNovaBold tracking-tighter">
-                                    {totalRatingsString}
-                                </div>
+                                <div className="text-xs text-[#8b8d97] font-ProximaNovaBold tracking-tighter">{totalRatingsString}</div>
                             </button>
                         </div>
                     )}
@@ -115,7 +95,7 @@ const RestaurantInfo = ({ ResInfo }) => {
                         <p
                             className="2xl:flex-1 text-sm font-ProximaNovaThin sm:w-1/2"
                             dangerouslySetInnerHTML={{
-                                __html: feeDetails?.message,
+                                __html: feeDetails?.message
                             }}
                         />
                     </div>

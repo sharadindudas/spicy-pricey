@@ -17,7 +17,7 @@ const App = () => {
                 toastOptions={{
                     className: "font-ProximaNovaSemiBold",
                     position: "top-center",
-                    duration: 1500,
+                    duration: 1500
                 }}
             />
         </>

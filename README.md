@@ -69,7 +69,7 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
 3. **📝 Set Up Environment Variables**  
    Create a `.env` file in the root directory with the following variables:
-   
+
     ```env
         VITE_FIREBASE_API=<your-firebase-api-key>
         VITE_FIREBASE_AUTHDOMAIN=<your-firebase-auth-domain>
@@ -84,14 +84,13 @@ A Swiggy-inspired web application designed to provide a seamless and engaging fo
 
 4. **CORS Middleware**:  
    Clone the CORS middleware repository and follow the instructions provided in the [Food Delivery CORS Middleware](https://github.com/sharadindudas/food-delivery-cors).
-   
-6. **▶️ Start the Development Server**
+5. **▶️ Start the Development Server**
 
     ```bash
     npm run dev
     ```
 
-7. **🌐 Access the Application**  
+6. **🌐 Access the Application**  
    Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---

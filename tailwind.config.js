@@ -8,8 +8,8 @@ module.exports = {
             center: true,
             padding: "2rem",
             screens: {
-                "2xl": "1400px",
-            },
+                "2xl": "1400px"
+            }
         },
         extend: {
             colors: {
@@ -23,7 +23,7 @@ module.exports = {
                 "color-8": "#7e808c",
                 "color-9": "#3e4152",
                 "color-10": "rgba(40, 44, 63, .45)",
-                "color-11": "#60b246",
+                "color-11": "#60b246"
             },
             fontFamily: {
                 GrotThin: ["Grotesque Pro Thin"],
@@ -35,26 +35,23 @@ module.exports = {
                 ProximaNovaMed: ["ProximaNova Condensed Med"],
                 ProximaNovaSemiBold: ["ProximaNova Condensed SemiBold"],
                 ProximaNovaBold: ["ProximaNova Condensed Bold"],
-                ProximaNovaBlack: ["ProximaNova Condensed Black"],
+                ProximaNovaBlack: ["ProximaNova Condensed Black"]
             },
             keyframes: {
                 "accordion-down": {
                     from: { height: "0" },
-                    to: { height: "var(--radix-accordion-content-height)" },
+                    to: { height: "var(--radix-accordion-content-height)" }
                 },
                 "accordion-up": {
                     from: { height: "var(--radix-accordion-content-height)" },
-                    to: { height: "0" },
-                },
+                    to: { height: "0" }
+                }
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
-                "accordion-up": "accordion-up 0.2s ease-out",
-            },
-        },
+                "accordion-up": "accordion-up 0.2s ease-out"
+            }
+        }
     },
-    plugins: [
-        require("tailwindcss-animate"),
-        require("tailwind-scrollbar-hide"),
-    ],
+    plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar-hide")]
 };

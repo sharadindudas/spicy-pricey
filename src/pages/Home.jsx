@@ -6,15 +6,9 @@ import ShimmerHome from "@/components/shimmer/ShimmerHome";
 import useRestaurant from "@/hooks/useRestaurant";
 
 const Home = () => {
-    const {
-        ImageCarousel,
-        TopChains,
-        AllRestaurants,
-        FilteredRestaurants,
-        setFilteredRestaurants,
-    } = useRestaurant();
+    const { ImageCarousel, TopChains, AllRestaurants, FilteredRestaurants, setFilteredRestaurants } = useRestaurant();
 
-    const userLocation = useSelector(state => state.location.userLocation);
+    const userLocation = useSelector((state) => state.location.userLocation);
 
     if (AllRestaurants.length <= 0) {
         return <ShimmerHome />;

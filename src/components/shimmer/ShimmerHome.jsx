@@ -13,9 +13,7 @@ const ShimmerHome = () => {
                             alt="carousel"
                         />
                     </div>
-                    <h2 className="sm:text-2xl text-xl font-ProximaNovaThin">
-                        Looking for great food near you ...
-                    </h2>
+                    <h2 className="sm:text-2xl text-xl font-ProximaNovaThin">Looking for great food near you ...</h2>
                 </div>
 
                 <div className="flex items-center justify-center md:flex-row flex-col md:justify-between mb-5 pl-10 pr-10 pt-10 container mx-auto gap-6">
